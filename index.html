@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Project</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c49906b727.js"
+      crossorigin="anonymous"
+    ></script>
+  <style>
+    img {
+      border-radius: 30px;
+
+    }
+
+    .ab .card {
+      border-radius: 30px;
+      position: relative;
+      bottom: 40px;
+      width: 100%;
+    }
+
+    .ab .image img {
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    .ab {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+      .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .about .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
+      .product .image1{
+        position: relative;
+        background: url("./img/1\ \(1\).png");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product .image2{
+        position: relative;
+        background: url("./img/2\ \(1\).png");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      
+      .product .image3{
+        position: relative;
+        background: url("./img/3\ \(1\).png");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+    
+      .main .demo:hover{
+        border: 2px solid rgb(157, 91, 5);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .product .image1 .content:hover{
+        background-color: rgba(255,255,255,0.9);
+      }
+      .product .image2 .content:hover{
+        background-color: rgba(255,255,255,0.9);
+      }
+      .product .image3 .content:hover{
+        background-color: rgba(255,255,255,0.9);
+      }
+      .product .image1 .content1 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      .product .image2 .content1 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+        transition: background-color 0.3s ease,transform0.3s ease;
+      }
+      .product .image3 .content1 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      /* 2nd grid */
+      .product2 .image1 {
+        position: relative;
+        background: url(./img/4\ \(1\).png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product2 .image2 {
+        position: relative;
+        background: url(./img/5\ \(1\).png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product2 .image3 {
+        position: relative;
+        background: url(./img/6\ \(1\).png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product2 .image1 .content3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      .product2 .image2 .content3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      .product2 .image3 .content3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+
+      .line{
+        position: absolute;
+        /* bottom: 0; */
+        width: 100%;
+        bottom: 147px;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      .product3 .image1 {
+        position: relative;
+        background: url(./img/7.png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product3 .image2 {
+        position: relative;
+        background: url(./img/8.png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product3 .image3 {
+        position: relative;
+        background: url(./img/9.png);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .product3 .image1 .content4 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      .product3 .image2 .content4 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+      .product3 .image3 .content4 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(255, 204, 137, 0.8);
+      }
+
+      .card1 {
+        background-color: rgb(244, 218, 183);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .card2{
+        background-color: rgb(244, 218, 183);
+        border-radius: 30px;
+      }
+    
+       /* footer  */
+       .footer{
+        height: 75vh;
+        background: url('./img/BOTTOM.png');
+        background-repeat: no-repeat;
+        /* background-position: center center; */
+        background-size: cover;
+      }
+      .footer ul{
+        list-style: none;
+      }
+      @media only screen and (min-width: 768px) {
+        .main .demo {
+          width: 40%;
+        }
+      }
+
+    @media only screen and (min-width:1200px) {
+      .ab .image {
+        width: 50%;
+
+      }
+
+      .ab .card {
+        height: 200px;
+        width: 50%;
+        top: 150px;
+        right: 100px;
+      }
+      .main .demo {
+          width: 30%;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <!-----------------------------------Header Page --------------------------------------------->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <div class="img w-25">
+        <img src="./img/logo.png" class="img-fluid">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex ">
+          <input class="form-control me-2 rounded-pill mx-5 border-dark bg-transparent my-4 px-3 " type="search"
+            placeholder="Search plants.." aria-label="Search">
+        </form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ms-4" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">catalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="#">support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!------------------------------------Home Page ------------------------------------------------------------------------------->
+
+  <div class="container home">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 text-center my-5">
+        <img src="./img/man_watering.png" class="img-fluid w-50">
+      </div>
+      <div class="col-12 col-md-12 col-lg-6">
+        <h1 class="text-center display-1">Be a <span class="fw-bold">Plant Parent</span> today <br>with <span
+            class="fw-bold text-success">Aranyak</span></h1>
+        <p class="my-3 fs-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quas
+          pariatur, id saepe fugit dolores!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quod.
+        </p>
+        <button class="rounded-pill w-100 py-2 fs-3 bg-success text-light border border-0">Explore catalog
+          <i class="fa-solid fa-arrow-right fs-5 ms-2"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------------------------------- Home Page2 -------------------------------------------->
+
+  <div class="container home">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 text-center my-5 order-0 order-lg-1 w-lg-1">
+        <img src="./img/planting.png" class="img-fluid w-50 ">
+      </div>
+      <div class="col-12 col-md-12 col-lg-6">
+        <h1 class="text-center display-1 fs-3 fw-bold">We Have Got You Covered</h1>
+        <h1 class="text-center display-1">However Popular or<span class="fw-bold"> Rare Plant</span> it is.</h1>
+        <p class="my-3 fs-4 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quod.
+        </p>
+        <button class="rounded-pill w-100 py-2 fs-3 bg-success text-light border border-0">Explore catalog
+          <i class="fa-solid fa-arrow-right fs-5 ms-2"></i></button>
+      </div>
+
+    </div>
+  </div>
+
+  <!------------------------------------------- Grid Images ---------------------------------------------->
+
+  <div class="card-group">
+
+  </div>
+
+  <div class="container card border border-0">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+        <img src="./img/Counter_1.png" class="img-fluid " alt="...">
+        <h1 class="card-title text-center">123456</h1>
+        <h2 class="card-text text-center">Plants Delivered</h2>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+        <img src="./img/Counter_2.png" class="img-fluid " alt="...">
+        <h1 class="card-title text-center">1235</h1>
+        <h2 class="card-text text-center">Happy Customers</h2>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+        <img src="/img/Counter_3.png" class="img-fluid " alt="...">
+        <h1 class="card-title text-center">500+</h1>
+        <h2 class="card-text text-center">Growing catalog</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container about">
+    <h2 class="fw-bold text-success text-center mt-5">About Us</h2>
+    <h1 class="text-center text-warning display-1">Our <span class="fw-bold">Core</span> Team <br> And Their <span
+        class="fw-bold">Philosophy</span></h1>
+    <div class="row">
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas debitis quasi
+        voluptate praesentium
+        distinctio.</p>
+      <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae eum soluta,
+        fuga fugit magnam.</p>
+
+    </div>
+    <div class="ab">
+      <div class="image">
+        <img src="./img/badhon.png" alt="">
+      </div>
+      <div class="card">
+        <h2 class="fw-bold text-warning text-center">Meet Badhon</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore provident reiciendis
+          tempore harum quod ducimus.</p>
+      </div>
+    </div>
+  </div>
+
+<!------------------------------------------------- Meet The Team -------------------------------------------------------------->
+
+<div class="container team">
+  <h2 class="text-center fw-bold text-warning">Meet Our Team</h2>
+    <div class="row">
+      <div class="team col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 px-3">
+        <div class="image1 mx-auto mb-2 w-md-100 w-75">
+          <img src="./img/6.png" class="img-fluid">
+          <h4 class="text-center text-success">James T. Kirk</h4>
+          <h2 class="text-center">CFO</h2>
+          <p class="text-center fs-10 fs-md-9 lh-xl mb-0">Lorem ipsum dolor sit,</p>
+        </div>
+      </div>
+      <div class="team col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 px-3">
+        <div class="image1 mx-auto mb-2 w-md-100 w-75">
+          <img src="./img/5.png" class="img-fluid">
+          <h4 class="text-center text-success">Mantgomery Scott</h4>
+          <h2 class="text-center">Account</h2>
+          <p class="text-center fs-10 fs-md-9 lh-xl mb-0">Lorem ipsum dolor sit,</p>
+        </div>
+      </div>
+      <div class="team col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 px-3">
+        <div class="image1 mx-auto mb-2 w-md-100 w-75">
+          <img src="./img/4.png" class="img-fluid">
+          <h4 class="text-center text-success">Nyota Uhura</h4>
+          <h2 class="text-center">Marketing</h2>
+          <p class="text-center fs-10 fs-md-9 lh-xl mb-0">Lorem ipsum dolor sit,</p>
+        </div>
+      </div>
+      <div class="team col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 px-3">
+        <div class="image1 mx-auto mb-2 w-md-100 w-75">
+          <img src="./img/3.png" class="img-fluid">
+          <h4 class="text-center text-success">Hikaru Sulu</h4>
+          <h2 class="text-center">CFO</h2>
+          <p class="text-center fs-10 fs-md-9 lh-xl mb-0">Lorem ipsum dolor sit,</p>
+        </div>
+      </div>
+      <div class="team col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 px-3">
+        <div class="image1 mx-auto mb-2 w-md-100 w-75">
+          <img src="./img/2.png" class="img-fluid">
+          <h4 class="text-center text-success">Pavel Chekov</h4>
+          <h2 class="text-center">CTO</h2>
+          <p class="text-center fs-10 fs-md-9 lh-xl mb-0">Lorem ipsum dolor sit,</p>
+        </div>
+      </div>
+      <div class="team col-sm-12 col-md-6 col-lg-4 mb-5 mb-lg-0 px-3">
+        <div class="image1 mx-auto mb-2 w-md-100 w-75">
+          <img src="./img/1.png" class="img-fluid">
+          <h4 class="text-center text-success">Leonard McCoy</h4>
+          <h2 class="text-center">Human Resource</h2>
+          <p class="text-center fs-10 fs-md-9 lh-xl mb-0">Lorem ipsum dolor sit,</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+  <div class="container cards">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+        <img src="./img/Counter_1.png" class="img-fluid" alt="" />
+        <h1 class="display-1 text-warning">9,124,624</h1>
+        <h1 class="fw-bold">Plants Delivered</h1>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+        <img src="./img/Counter_2.png" class="img-fluid" alt="" />
+        <h1 class="display-1 text-warning">9,124,624</h1>
+        <h1 class="fw-bold">Plants Delivered</h1>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+        <img src="./img/Counter_3.png" class="img-fluid" alt="" />
+        <h1 class="display-1 text-warning">9,124,624</h1>
+        <h1 class="fw-bold">Plants Delivered</h1>
+      </div>
+    </div>
+  </div>
+  <!-- card page end  -->
+  
+  <!-- about page end  -->
+  <div class="container product">
+    <h5 class="text-center text-success fw-bold">Our Products</h5>
+    <h1 class="text-warning text-center display-1">
+      <span class="fw-bold">New</span> Arrival
+    </h1>
+    <div class="main">
+      <div class="demo">
+        <div class="image1">
+          <div class="content1">
+            <div class="first">
+              <i
+                class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+              ></i>
+              <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+            </div>
+            <div class="second">
+              <i
+                class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+              ></i>
+              <h6 class="text-success fw-bold fs-5">add to cart</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <h3 class="text-success text-center">Philodendron</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatibus eos fuga provident repellat esse quibusdam delectus
+            inventore quam odio.
+          </p>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="image2">
+          <div class="content1">
+            <div class="first">
+              <i
+                class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+              ></i>
+              <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+            </div>
+            <div class="second">
+              <i
+                class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+              ></i>
+              <h6 class="text-success fw-bold fs-5">add to cart</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <h3 class="text-success text-center">Philodendron</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatibus eos fuga provident repellat esse quibusdam delectus
+            inventore quam odio.
+          </p>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="image3">
+          <div class="content1">
+            <div class="first">
+              <i
+                class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+              ></i>
+              <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+            </div>
+            <div class="second">
+              <i
+                class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+              ></i>
+              <h6 class="text-success fw-bold fs-5">add to cart</h6>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <h3 class="text-success text-center">Philodendron</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatibus eos fuga provident repellat esse quibusdam delectus
+            inventore quam odio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- about page end  -->
+    <div class="container product2">
+      <h1 class="text-warning display-1 text-end">
+        <span class="fw-bold">Popular </span>little plants
+      </h1>
+      <div class="main">
+        <div class="demo">
+          <div class="image1">
+            <div class="content3">
+              <div class="first">
+                <i
+                  class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+                ></i>
+                <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+              </div>
+              <div class="second">
+                <i
+                  class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+                ></i>
+                <h6 class="text-success fw-bold fs-5">add to cart</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <h3 class="text-success text-center">Snake/Sansevieria</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              voluptatibus eos fuga provident repellat esse quibusdam delectus
+              inventore quam odio.
+            </p>
+          </div>
+        </div>
+        <div class="demo">
+          <div class="image2">
+            <div class="content3">
+              <div class="first">
+                <i
+                  class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+                ></i>
+                <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+              </div>
+              <div class="second">
+                <i
+                  class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+                ></i>
+                <h6 class="text-success fw-bold fs-5">add to cart</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <h3 class="text-success text-center">Bromeliad Aechmea Pink</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              voluptatibus eos fuga provident repellat esse quibusdam delectus
+              inventore quam odio.
+            </p>
+          </div>
+        </div>
+        <div class="demo">
+          <div class="image3">
+            <div class="content3">
+              <div class="first">
+                <i
+                  class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+                ></i>
+                <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+              </div>
+              <div class="second">
+                <i
+                  class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+                ></i>
+                <h6 class="text-success fw-bold fs-5">add to cart</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card1">
+            <h3 class="text-success text-center">Parlor Palm</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              voluptatibus eos fuga provident repellat esse quibusdam delectus
+              inventore quam odio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- 3rd page of grid -->
+<div class="container product3">
+  <h1 class="text-warning text-start display-1">
+    <span class="fw-bold">Easy</span> to care plants
+  </h1>
+  <div class="main">
+    <div class="demo">
+      <div class="image1">
+        <div class="content4">
+          <div class="first">
+            <i
+              class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+            ></i>
+            <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+          </div>
+          <div class="second">
+            <i
+              class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+            ></i>
+            <h6 class="text-success fw-bold fs-5">add to cart</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <h3 class="text-success text-center">Philodendron</h3>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          voluptatibus eos fuga provident repellat esse quibusdam delectus
+          inventore quam odio.
+        </p>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="image2">
+        <div class="content4">
+          <div class="first">
+            <i
+              class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+            ></i>
+            <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+          </div>
+          <div class="second">
+            <i
+              class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+            ></i>
+            <h6 class="text-success fw-bold fs-5">add to cart</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <h3 class="text-success text-center">Philodendron</h3>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          voluptatibus eos fuga provident repellat esse quibusdam delectus
+          inventore quam odio.
+        </p>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="image3">
+        <div class="content4">
+          <div class="first">
+            <i
+              class="fa-solid fa-cart-shopping my-3 ms-4 display-4 text-success"
+            ></i>
+            <h6 class="text-success fw-bold fs-5">add to wishlist</h6>
+          </div>
+          <div class="second">
+            <i
+              class="fa-solid fa-heart display-4 my-3 ms-4 text-success"
+            ></i>
+            <h6 class="text-success fw-bold fs-5">add to cart</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <h3 class="text-success text-center">Philodendron</h3>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          voluptatibus eos fuga provident repellat esse quibusdam delectus
+          inventore quam odio.
+        </p>
+      </div>
+    </div>
+    <button class="rounded-pill w-50 py-2 fs-3 bg-success text-light border border-0">See full catalog
+      <i class="fa-solid fa-arrow-right fs-5 ms-2"></i></button>
+  </div>
+
+</div>
+  <!-- product page end  -->
+
+
+ <!-- footer  -->
+ <div class="container footer">
+  <div class="logo mt-5">
+   <img src="./img/Footer_logo.png" class="img-fluid w-50" alt="">
+  </div>
+  <div class="row">
+   <div class="col-6 col-sm-4 mt-5">
+     <ul>
+       <li class="fw-bold text-light my-3">home</li>
+       <li class="fw-bold text-light my-3">about</li>
+       <li class="fw-bold text-light my-3">catalog</li>
+       <li class="fw-bold text-light my-3">review</li>
+       <li class="fw-bold text-light my-3">support</li>
+     </ul>
+   </div>
+   <div class="col-6 col-sm-4 mt-5">
+     <h5 class="fw-bold ms-4">User Account</h5>
+     <ul>
+       <li class="fw-bold text-light my-3">sign up</li>
+       <li class="fw-bold text-light my-3">Login</li>
+       <li class="fw-bold text-light my-3">edit profile</li>
+       <li class="fw-bold text-light my-3">history</li>
+       <li class="fw-bold text-light my-3">refund</li>
+     </ul>
+   </div>
+   <div class="col-12 col-sm-4">
+     <div class="row">
+       <div class="col-6 col-sm-12 mb-4">
+         <h5 class="text-light fw-bold">Follow Us At</h5>
+         <i class="fa-brands fa-square-facebook text-light m-1 fs-3"></i>
+         <i class="fa-brands fa-linkedin text-light m-1 fs-3"></i>
+         <i class="fa-brands fa-square-twitter text-light m-1 fs-3"></i>
+         <i class="fa-brands fa-square-youtube text-light m-1 fs-3"></i>
+       </div>
+       <div class="col-6 col-sm-12">
+         <h5 class="text-light fw-bold">Contact</h5>
+         <p class="text-light">Lorem ipsum dolor sit amet.</p>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>
+</body>
+
+</html>
